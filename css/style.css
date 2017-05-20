@@ -9,37 +9,73 @@ body {
 /*THIS IS THE STYLES FOR MOBILE HEADER*/
 header {
   text-align: center;
+  padding-top: 1rem;
 }
 
 nav li {
   list-style: none;
   display: inline;
+  padding-top: 3rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.name {
+  font-style: normal;
+  font-weight: 400;
+}
+.cost {
+  font-style: normal;
+  font-weight: 100;
+}
+.cart {
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.banner-img {
+  /*z-index: -1;*/
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.banner-text {
+  /*z-index: 1;*/
 }
 
 /*THIS IS THE STYLES FOR MOBILE MAIN*/
 main {
-  background-color: grey;
+  background-color: white;
 }
 
 .categories {
+  padding-left: 1rem;
 }
 .categories li {
   display: inline;
+  padding: .5rem;
+
 }
 
 .img-set {
   /*THIS CONTAINS ALL IMAGES IN ONE FLEXBOX*/
   display: flex;
-
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*flex: 8;*/
+  padding: 1rem;
+  margin: auto;
 }
 .img-box {
   /*THIS CONTAINS IMAGE AND LIST ITEMS BELOW*/
-  width: 10rem;
-  height: 14rem;
-  border-style: solid;
-  border-color: black;
-  overflow: none;
+  /*width: 10rem;
+  height: 15rem;*/
   text-align: center;
+  padding: 0rem;
+  margin: auto;
+  justify-content: center;
 }
 
 .img-box ul {
@@ -47,6 +83,9 @@ main {
   margin: .5rem;
   padding: 0rem;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 
@@ -56,23 +95,88 @@ main {
   border-style: solid;
   border-color: black;
   text-align: center;
+  overflow: hidden;
+  margin: auto;
+  /*width: 100%;*/
   /*THIS JUST EFFECTS THE INDIVIDUAL IMAGES*/
+}
+.img-view img {
 
 }
 
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+footer img {
+  width: 4rem;
+}
 
 @media screen and (max-width: 48rem) and (min-width: 26rem) {
 
   body {
-    background: blue;
+    /*background: blue;*/
   }
+
+
+  .categories {
+    padding-left: 5%;
+  }
+  .categories li {
+    display: inline;
+    padding: .5rem;
+
+  }
+
+
 
 }
 
 @media screen and (min-width: 48rem) {
 
 body {
-  background: red;
+  /*background: red;*/
+}
+
+.img-set {
+  /*margin-left: 25%;*/
+  /*margin-right: 25%;*/
+  width: 60rem;
+}
+
+.cat {
+  /*background-color: #FFE66D;*/
+  padding: .1rem;
+
+}
+
+.categories {
+  margin-left: 5rem;
+}
+.categories li {
+  display: inline;
+  padding: .5rem;
+
+}
+
+
+footer img {
+  width: 5rem;
+  height: auto;
+}
+
+.img-view {
+  width: 12rem;
+  height: 12rem;
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+  overflow: hidden;
+  margin: auto;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  /*THIS JUST EFFECTS THE INDIVIDUAL IMAGES*/
 }
 
 }

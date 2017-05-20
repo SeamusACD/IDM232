@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Nufro</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
 
   <body>
@@ -20,24 +20,110 @@
           <li>Shop</li>
         </nav>
         <div class="banner">
-          <img src="images/gg.jp" alt="Models on green background">
-          <h1>"Where Nu meets Fro"</h1>
+          <picture>
+              <source media="(min-width: 768px)" srcset="images/gg-b.jpg">
+              <source media="(min-width: 500px)" srcset="images/gg-m.jpg">
+              <img class="banner-img" src="images/gg.jpg" alt="Models on green background">
+          </picture>
+
+          <!-- <h1 class="banner-text">"Where Nu meets Fro"</h1> -->
         </div>
       </header>
 
       <!-- main contains: categories list_images+descriptions -->
       <main>
-        <ul class="categories">
-          <li>All</li>
-          <li>Denim</li>
-          <li>Jackets</li>
-          <li>Raincoats</li>
-        </ul>
-        <div class="image-set">
+
+
+        <div class="cat">
+          <ul class="categories"
+            <li>All</li>
+            <li>Denim</li>
+            <li>Jackets</li>
+            <li>Raincoats</li>
+          </ul>
+        </div>
+        <div class="img-set">
 
           <div class="img-box">
             <div class="img-view">
-              <img src="images/img1.jp" alt="">
+              <img src="images/img1.jpg" alt="ww">
+            </div>
+            <ul>
+              <li class="name">Name of Item</li>
+              <li class="cost">$50.00</li>
+              <li class="cart">Add to Cart</li>
+            </ul>
+          </div>
+
+          <div class="img-box">
+            <div class="img-view">
+              <img src="images/img2.jpg" alt="">
+            </div>
+            <ul>
+              <li class="name">Name of Item</li>
+              <li class="cost">$50.00</li>
+              <li class="cart">Add to Cart</li>
+            </ul>
+          </div>
+
+          <div class="img-box">
+            <div class="img-view">
+              <img src="images/img3.jpg" alt="">
+            </div>
+            <ul>
+              <li class="name">Name of Item</li>
+              <li class="cost">$50.00</li>
+              <li class="cart">Add to Cart</li>
+            </ul>
+          </div>
+
+          <div class="img-box">
+            <div class="img-view">
+              <img src="images/img4.jpg" alt="">
+            </div>
+            <ul>
+              <li class="name">Name of Item</li>
+              <li class="cost">$50.00</li>
+              <li class="cart">Add to Cart</li>
+            </ul>
+          </div>
+
+          <div class="img-box">
+            <div class="img-view">
+              <img src="images/img5.jpg" alt="">
+            </div>
+            <ul>
+              <li class="name">Name of Item</li>
+              <li class="cost">$50.00</li>
+              <li class="cart">Add to Cart</li>
+            </ul>
+          </div>
+
+          <div class="img-box">
+            <div class="img-view">
+              <img src="images/img6.jpg" alt="">
+            </div>
+            <ul>
+              <li class="name">Name of Item</li>
+              <li class="cost">$50.00</li>
+              <li class="cart">Add to Cart</li>
+            </ul>
+          </div>
+
+          <div class="img-box">
+            <div class="img-view">
+              <img src="images/img7.jpg" alt="">
+            </div>
+            <ul>
+              <li class="name">Name of Item</li>
+              <li class="cost">$50.00</li>
+              <li class="cart">Add to Cart</li>
+            </ul>
+          </div>
+
+          <div class="img-box">
+            <div class="img-view">
+              <img src="images/img8.jpg" alt="">
             </div>
             <ul>
               <li class="name">Name of Item</li>
@@ -52,7 +138,7 @@
       <!-- social icons -->
       <footer>
         <div class="icon-box">
-          <p>this will be a shape</p>
+          <img src="images/icons.png" alt="facebook">
         </div>
       </footer>
 
