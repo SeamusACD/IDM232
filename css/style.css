@@ -3,180 +3,163 @@
 }
 
 body {
-  margin: 0;
-  background-color: white;
-}
-/*THIS IS THE STYLES FOR MOBILE HEADER*/
-header {
-  text-align: center;
-  padding-top: 1rem;
+  margin:0;
+  font-size:1.4rem;
+  font-family:arial;
+  background-color:white;
 }
 
+.logo  {
+  width: 10rem;
+  padding-top: 1rem;
+  margin:auto;
+}
+
+nav {
+  text-align: center;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 100;
+}
 nav li {
   list-style: none;
   display: inline;
-  padding-top: 3rem;
   padding-left: .5rem;
   padding-right: .5rem;
 }
 
+.categories ul {
+  background: #DDF9FF;
+  padding: 1rem;
+
+}
+.categories ul li {
+  display: inline;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  font-size: 1.2rem;
+}
+
+.categories .selected {
+  font-style: italic;
+  font-weight: 600;
+  margin-right: 2rem;
+  text-decoration: underline;
+}
+
+
+
+
+
+img {
+  border:0;
+  width:100%;
+  height:100%;
+}
+
+
+ul  {
+  font-size:1rem;
+  text-align:center;
+  list-style: none;
+  padding: 0;
+}
+
+
 .name {
   font-style: normal;
-  font-weight: 400;
-}
-.cost {
-  font-style: normal;
-  font-weight: 100;
-}
-.cart {
-  font-style: normal;
-  text-decoration: underline;
   font-weight: 600;
 }
 
-.banner-img {
-  /*z-index: -1;*/
-  width: 100%;
-  padding-top: 1rem;
+.cost {
+  font-style: italic;
+  font-weight: lighter;
 }
 
-.banner-text {
-  /*z-index: 1;*/
+.cart {
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: underline;
 }
 
-/*THIS IS THE STYLES FOR MOBILE MAIN*/
-main {
-  background-color: white;
-}
-
-.categories {
-  padding-left: 1rem;
-}
-.categories li {
-  display: inline;
-  padding: .5rem;
-
-}
-
-.img-set {
-  /*THIS CONTAINS ALL IMAGES IN ONE FLEXBOX*/
+#items {
+  max-width:96rem;
+  width:100%;
+  min-height:100px;
+  height:auto;
+  margin:0 auto;
+  background-color:white;
+  box-sizing:border-box;
+  padding:0;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  /*flex: 8;*/
-  padding: 1rem;
-  margin: auto;
-}
-.img-box {
-  /*THIS CONTAINS IMAGE AND LIST ITEMS BELOW*/
-  /*width: 10rem;
-  height: 15rem;*/
-  text-align: center;
-  padding: 0rem;
-  margin: auto;
-  justify-content: center;
+  align-content: flex-end;
 }
 
-.img-box ul {
-  list-style: none;
-  margin: .5rem;
-  padding: 0rem;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-
-.img-view {
-  width: 9.5rem;
-  height: 9.5rem;
-  border-style: solid;
-  border-color: black;
-  text-align: center;
-  overflow: hidden;
-  margin: auto;
-  /*width: 100%;*/
-  /*THIS JUST EFFECTS THE INDIVIDUAL IMAGES*/
-}
-.img-view img {
-
+figure {
+  width:10rem;
+  height:10rem;
+  display:block;
+  margin:1rem .7rem 6rem .7rem;
+  padding:0;
+  box-sizing:content-box;
+  color:black;
 }
 
 footer {
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
-footer img {
-  width: 4rem;
-}
-
-@media screen and (max-width: 48rem) and (min-width: 26rem) {
-
-  body {
-    /*background: blue;*/
-  }
-
-
-  .categories {
-    padding-left: 5%;
-  }
-  .categories li {
-    display: inline;
-    padding: .5rem;
-
-  }
-
-
-
-}
-
-@media screen and (min-width: 48rem) {
-
-body {
   /*background: red;*/
+  padding: 1.5rem;
 }
 
-.img-set {
-  /*margin-left: 25%;*/
-  /*margin-right: 25%;*/
-  width: 60rem;
+footer ul li{
+  list-style: none;
+  display: inline-block;
+  padding: .3rem;;
 }
 
-.cat {
-  /*background-color: #FFE66D;*/
-  padding: .1rem;
-
-}
-
-.categories {
-  margin-left: 5rem;
-}
-.categories li {
-  display: inline;
-  padding: .5rem;
-
+footer ul li .icon {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 
-footer img {
-  width: 5rem;
-  height: auto;
-}
+@media screen and (max-width: 51.5rem) and (min-width: 26rem) {
 
-.img-view {
-  width: 12rem;
-  height: 12rem;
-  border-style: solid;
-  border-color: black;
-  text-align: center;
-  overflow: hidden;
-  margin: auto;
-  margin-left: .5rem;
-  margin-right: .5rem;
-  /*THIS JUST EFFECTS THE INDIVIDUAL IMAGES*/
-}
+
 
 }
+
+
+
+
+
+
+@media screen and (min-width: 51.5rem) {
+  #items {
+    max-width:80rem;
+  }
+  figure {
+    width:15rem;
+    height:15rem;
+    display:block;
+    margin:1rem .7rem 6rem .7rem;
+    padding:0;
+    box-sizing:content-box;
+    color:black;
+  }
+
+}
+
+
+/*#items figure img {
+  -webkit-transition:opacity 0.26s ease-out;
+  -moz-transition:opacity 0.26s ease-out;
+  -ms-transition:opacity 0.26s ease-out;
+  -o-transition:opacity 0.26s ease-out;
+  transition:opacity 0.26s ease-out;
+}*/
