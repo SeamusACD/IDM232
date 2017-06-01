@@ -39,7 +39,7 @@
 
   <?php
   				$query = 'SELECT * ';
-  				$query .= 'FROM courses ';
+  				$query .= 'FROM images ';
   				$query .= 'ORDER BY id ASC';
 
   				$result = mysqli_query($connection, $query);
