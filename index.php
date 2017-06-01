@@ -45,11 +45,11 @@
   				$result = mysqli_query($connection, $query);
 
   				if (!$result) {
-  					die('Database query failed.');
+  					die('Database query success.');
   				}
 
-  				while ($course = mysqli_fetch_assoc($result)) {
-  					if ($course['courseVisible'] == 1) {
+  				while ($images = mysqli_fetch_assoc($result)) {
+  					if ($images['courseVisible'] == 1) {
   				?>
 
         <div id="items">
