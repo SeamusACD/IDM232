@@ -39,25 +39,25 @@
 
   <?php
   				$query = 'SELECT * ';
-  				$query .= 'FROM images ';
+  				$query .= 'FROM items ';
   				$query .= 'ORDER BY id ASC';
 
   				$result = mysqli_query($connection, $query);
 
   				if (!$result) {
-  					die('Database query success.');
+  					die('Database query fail.');
   				}
 
-  				while ($images = mysqli_fetch_assoc($result)) {
-  					if ($images['courseVisible'] == 1) {
+  				while ($items = mysqli_fetch_assoc($result)) {
+  					if ($items['courseVisible'] == 1) {
   				?>
 
         <div id="items">
               <figure>
-                <img src="<?php echo $images['imageView'];?>" alt="<?php echo $images ['imageTitle'];?>">
+                <img src="<?php echo $items['itemImg'];?>" alt="<?php echo $items ['imageTitle'];?>">
                 <ul>
-                  <li class="name">Denim Washed<?php echo $images['imageTitle']; ?></li>
-                  <li class="cost">$40.00<?php echo $images['costTitle']; ?></li>
+                  <li class="name">Denim Washed<?php echo $items['itemTitle']; ?></li>
+                  <li class="cost">$40.00<?php echo $items['itemCost']; ?></li>
                   <li class="cart">Add to Cart</li>
                 </ul>
               </figure>
