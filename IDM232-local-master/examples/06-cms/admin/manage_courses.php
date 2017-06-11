@@ -3,7 +3,7 @@
 <?php
 
 /*
-CREATE TABLE `idm232-courses`.`courses` (
+CREATE TABLE `sddesig2_idm232-courses`.`images` (
   `id` int(11) NOT NULL NULL AUTO_INCREMENT,
   `courseTitle` varchar(100),
   `courseImageSmall` varchar(200),

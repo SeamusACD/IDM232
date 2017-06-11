@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+<?php
+  // require_once 'includes/db_connection.php';
+  require_once 'includes/db_connection_live.php';
+?>
   <head>
     <meta charset="utf-8">
     <title></title>
@@ -36,6 +40,7 @@
   </div>
 
 
+  <div id="items">
 
   <?php
   				$query = 'SELECT * ';
@@ -48,27 +53,28 @@
   					die('Database query fail.');
   				}
 
-  				while ($items = mysqli_fetch_assoc($result)) {
-  					if ($items['courseVisible'] == 1) {
+
+
+  				while ($row = mysqli_fetch_assoc($result)) {
   				?>
 
-        <div id="items">
               <figure>
-                <img src="<?php echo $items['itemImg'];?>" alt="<?php echo $items ['imageTitle'];?>">
+                <img src="<?php echo $row['itemImg'];?>" alt="<?php echo $items ['itemTitle'];?>">
                 <ul>
-                  <li class="name">Denim Washed<?php echo $items['itemTitle']; ?></li>
-                  <li class="cost">$40.00<?php echo $items['itemCost']; ?></li>
+                  <li class="name"><?php echo $row['itemTitle']; ?></li>
+                  <li class="cost"><?php echo $row['itemCost']; ?></li>
                   <li class="cart">Add to Cart</li>
                 </ul>
               </figure>
-        </div>
-  				<div>
 
   				<?php
-          		  } // end if
          			 } // end while
-               mysqli_free_result($result);?>
-  			  </div>
+               mysqli_free_result($result);
+          ?>
+
+
+        </div>
+
 
 
 <footer>
