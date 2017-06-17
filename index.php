@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <?php
-  // require_once 'includes/db_connection.php';
-  require_once 'includes/db_connection_live.php';
+  require_once 'includes/db_connection.php';
+  // require_once 'includes/db_connection_live.php';
 ?>
   <head>
     <meta charset="utf-8">
@@ -59,13 +59,19 @@
   				?>
 
               <figure>
-                <img src="<?php echo $row['itemImg'];?>" alt="<?php echo $items ['itemTitle'];?>">
+                <img onclick="myFunction()" src="<?php echo $row['itemImg'];?>" alt="<?php echo $items ['itemTitle'];?>">
                 <ul>
                   <li class="name"><?php echo $row['itemTitle']; ?></li>
                   <li class="cost"><?php echo $row['itemCost']; ?></li>
                   <li class="cart">Add to Cart</li>
                 </ul>
               </figure>
+
+              <!-- <div id="pop-up">
+                <ul>
+                  <li class="cost"><?php echo $row['itemDesc']; ?></li>
+                </ul>
+              </div> -->
 
   				<?php
          			 } // end while
@@ -74,6 +80,8 @@
 
 
         </div>
+
+
 
 
 
